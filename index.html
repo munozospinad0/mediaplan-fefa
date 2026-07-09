@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Plan de Medios · Mueblería Fefa · ECUS Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--vio:#3B2BA3;--vio2:#5B3FE0;--dark:#17103a;--ink:#5b5581;--org:#F8871F;--yel:#F6EE3E;--pink:#F3EEFF;--line:rgba(59,43,163,.14)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#fff}
+  body{font-family:'Sora','Segoe UI',sans-serif;color:var(--dark);font-size:10.5pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .mono{font-family:'Space Mono',monospace;letter-spacing:.14em;text-transform:uppercase}
+  @page{size:A4;margin:0}
+  .page{width:210mm;height:296mm;overflow:hidden;page-break-after:always;position:relative;padding:16mm 16mm 14mm}
+  .page:last-child{page-break-after:auto}
+  .cover{background:linear-gradient(135deg,#241a6b 0%,var(--vio) 45%,var(--vio2) 100%);color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:20mm}
+  .cover::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1.4px);background-size:26px 26px;opacity:.32}
+  .cover::after{content:"";position:absolute;right:-50mm;top:-50mm;width:140mm;height:140mm;border-radius:50%;background:radial-gradient(circle,rgba(246,238,62,.3),transparent 65%)}
+  .logocard{position:relative;background:#fff;border-radius:18px;padding:9mm 12mm;display:inline-block;width:fit-content;box-shadow:0 14px 40px rgba(0,0,0,.3)}
+  .logocard img{height:17mm;display:block}
+  .ctitle{position:relative}
+  .ctitle .k{display:inline-block;background:var(--yel);color:var(--dark);font-weight:800;font-size:9pt;padding:2.2mm 5mm;border-radius:24px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:7mm}
+  .ctitle h1{font-size:33pt;font-weight:800;line-height:1.08;letter-spacing:-.02em;max-width:150mm}
+  .ctitle h1 em{font-style:normal;color:var(--yel)}
+  .ctitle p{margin-top:6mm;font-size:12.5pt;opacity:.92;max-width:140mm;line-height:1.5}
+  .cfoot{position:relative;display:flex;justify-content:space-between;align-items:flex-end;font-size:9pt;opacity:.92}
+  .head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8mm;border-bottom:3px solid var(--vio);padding-bottom:4mm}
+  .head img{height:9mm}
+  .head .pn{font-size:8pt;color:var(--ink)}
+  h2{font-size:17pt;font-weight:800;letter-spacing:-.02em;display:flex;align-items:center;gap:4mm;margin-bottom:2mm}
+  h2::before{content:"";width:4mm;height:4mm;background:linear-gradient(135deg,var(--org),var(--yel));border-radius:1.2mm;transform:rotate(45deg);flex:none}
+  .lead{color:var(--ink);font-size:10pt;margin:0 0 6mm 8mm;line-height:1.5}
+  h3{font-size:11.5pt;font-weight:800;margin:5mm 0 2.5mm}
+  table{width:100%;border-collapse:collapse;font-size:9pt}
+  th{text-align:left;background:var(--vio);color:#fff;font-weight:700;padding:2.6mm 3mm;font-size:8pt;letter-spacing:.06em;text-transform:uppercase}
+  th:first-child{border-radius:2mm 0 0 0}th:last-child{border-radius:0 2mm 0 0}
+  td{padding:2.6mm 3mm;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.4}
+  tr:nth-child(even) td{background:#faf9ff}
+  .b{font-weight:700}
+  .card{background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:5mm;box-shadow:0 3px 12px rgba(59,43,163,.06)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4mm}
+  .chip{display:inline-block;background:var(--pink);color:var(--vio);font-weight:700;font-size:7.5pt;padding:1.2mm 3mm;border-radius:12px;margin:0 1mm 1mm 0}
+  .accent{border-left:4px solid var(--org);background:#fff8ef;border-radius:0 10px 10px 0;padding:4mm 5mm;font-size:9.5pt;line-height:1.5}
+  .case{border:1.5px solid var(--line);border-radius:14px;padding:4.2mm 5mm;position:relative;overflow:hidden;margin-bottom:3.5mm}
+  .case::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2.5mm;background:linear-gradient(180deg,var(--org),var(--yel))}
+  .case.v::before{background:linear-gradient(180deg,var(--vio),var(--vio2))}
+  .case h4{font-size:11pt;font-weight:800;margin-bottom:1mm;padding-left:3mm}
+  .case .tag{font-size:7.5pt;color:var(--ink);font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding-left:3mm;display:block;margin-bottom:2.5mm}
+  .case p{font-size:8.8pt;color:#3d3963;line-height:1.45;padding-left:3mm;margin-bottom:2mm}
+  ul.cl{list-style:none;font-size:9.3pt;line-height:1.55}
+  ul.cl li{padding-left:6mm;position:relative;margin-bottom:1.6mm}
+  ul.cl li::before{content:"";position:absolute;left:0;top:1.6mm;width:2.6mm;height:2.6mm;border-radius:50%;background:var(--org)}
+  ul.cl.v li::before{background:var(--vio2)}
+  .fgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4mm}
+  .factor{border:1.5px solid var(--line);border-radius:12px;padding:4mm;background:linear-gradient(180deg,#faf9ff,#fff)}
+  .factor .n{font-family:'Space Mono',monospace;font-size:8pt;color:var(--org);font-weight:700;letter-spacing:.08em}
+  .factor h4{font-size:10pt;font-weight:800;margin:1mm 0 1mm;letter-spacing:-.01em}
+  .factor p{font-size:8.2pt;color:var(--ink);line-height:1.4}
+  .foot{position:absolute;bottom:8mm;left:16mm;right:16mm;display:flex;justify-content:space-between;font-size:7.5pt;color:#9a94bd}
+  .bar{display:inline-block;height:5mm;border-radius:2mm;background:linear-gradient(90deg,var(--vio),var(--vio2));vertical-align:middle}
+</style>
+</head>
+<body>
+
+<!-- PORTADA -->
+<div class="page cover">
+  <div class="logocard"><img src="_logo.png" alt="ECUS Agency"></div>
+  <div class="ctitle">
+    <span class="k">Plan de Medios · Meta Ads · 2026</span>
+    <h1>Mueblería Fefa<br><em>Compra con Tefa</em></h1>
+    <p>Estrategia digital B2C enfocada en <b>venta de contado</b>: muebles a la medida, showroom y servicio integral — para atraer clientes con poder de compra y llenar el showroom de contactos calificados.</p>
+  </div>
+  <div class="cfoot">
+    <div><span class="mono">ECUS Agency · Panamá</span><br>ecus.agency · @ecusagency</div>
+    <div class="mono">Confidencial</div>
+  </div>
+</div>
+
+<!-- PÁG 2 · NEGOCIO + OBJETIVO -->
+<div class="page">
+  <div class="head"><img src="_logo.png" alt="ECUS"><span class="pn mono">Fefa · Plan de Medios · 02</span></div>
+  <h2>El negocio y hacia dónde apuntamos</h2>
+  <p class="lead">Mueblería Fefa es un híbrido entre <b>showroom</b> y <b>taller de fabricación a la medida</b>. Su fuerza no es un inventario masivo en bodega, sino la <b>personalización</b>: el cliente diseña su mueble. Ese es el gancho que vamos a vender.</p>
+  <div class="grid2">
+    <div class="card">
+      <h4 style="font-size:10.5pt;font-weight:800;margin-bottom:2mm">Qué vendemos</h4>
+      <ul class="cl v">
+        <li><b>Sillones, juegos de comedor y camas</b> (Individual, Queen y King).</li>
+        <li><b>Personalización total:</b> diseño desde una foto o video, medida, tela y color exactos.</li>
+        <li><b>Disponibilidad inmediata:</b> lo que está en el showroom se lleva hoy mismo.</li>
+        <li><b>Servicio integral:</b> entrega a domicilio y armado incluido.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4 style="font-size:10.5pt;font-weight:800;margin-bottom:2mm">El objetivo del plan</h4>
+      <ul class="cl">
+        <li><b>Público B2C</b> con poder adquisitivo para comprar de contado ($1,000–$1,400).</li>
+        <li>Generar <b>conversaciones calificadas</b> (WhatsApp) y visitas al showroom.</li>
+        <li>Posicionar el diferenciador: <b>"a tu medida, de una foto a tu sala"</b>.</li>
+        <li>Construir marca y audiencias para escalar mes a mes.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="accent" style="margin-top:5mm"><b>Foco en contado.</b> El sistema de abonos y el crédito (Credijá / Tafi) existen y se ofrecen en el <b>cierre</b> de la venta — pero la pauta <b>no lidera con crédito</b>. Atraemos compradores de contado y amantes de lo personalizado; el financiamiento es la herramienta que destraba la venta, no el gancho del anuncio.</div>
+</div>
+
+<!-- PÁG 3 · PÚBLICO -->
+<div class="page">
+  <div class="head"><img src="_logo.png" alt="ECUS"><span class="pn mono">Fefa · Plan de Medios · 03</span></div>
+  <h2>A quién le hablamos</h2>
+  <p class="lead">El perfil ideal: personas que están amueblando o renovando su hogar, valoran el diseño a la medida y tienen con qué comprar de contado. Así los segmentamos en Meta.</p>
+  <div class="fgrid">
+    <div class="factor"><div class="n">01</div><h4>Demográfico</h4><p>Adultos 28–55, hombres y mujeres, con poder adquisitivo medio-alto. Ciudad de Panamá y su zona de entrega.</p></div>
+    <div class="factor"><div class="n">02</div><h4>Momentos de vida</h4><p>Casa o apartamento nuevo, mudanza, recién casados, remodelación, familias que renuevan la sala o el cuarto.</p></div>
+    <div class="factor"><div class="n">03</div><h4>Intereses (Meta)</h4><p>Decoración, diseño de interiores, mobiliario, mejoras del hogar, bienes raíces / proyectos nuevos, bodas.</p></div>
+    <div class="factor"><div class="n">04</div><h4>Comportamiento</h4><p>Compradores comprometidos (engaged shoppers), interesados en marcas premium de hogar.</p></div>
+    <div class="factor"><div class="n">05</div><h4>Retargeting</h4><p>Quienes vieron los videos, visitaron la página / IG o escribieron por WhatsApp — los más cerca de comprar.</p></div>
+    <div class="factor"><div class="n">06</div><h4>Lookalikes</h4><p>Audiencias similares a los clientes reales y a los interesados, para encontrar más compradores de contado.</p></div>
+  </div>
+  <div class="accent" style="margin-top:5mm"><b>Cobertura a confirmar:</b> la geo se ajusta a la <b>zona real de entrega a domicilio</b> de la mueblería (Ciudad de Panamá y alrededores). No pautamos donde no se pueda entregar y armar.</div>
+</div>
+
+<!-- PÁG 4 · ESTRATEGIA + CREATIVOS -->
+<div class="page">
+  <div class="head"><img src="_logo.png" alt="ECUS"><span class="pn mono">Fefa · Plan de Medios · 04</span></div>
+  <h2>Estrategia: el embudo en Meta (Facebook + Instagram)</h2>
+  <p class="lead">Cuatro frentes que llevan a la persona de "no me conoce" a "compró de contado".</p>
+  <table>
+    <tr><th style="width:22%">Fase</th><th style="width:26%">Objetivo Meta</th><th>Qué mostramos</th></tr>
+    <tr><td class="b">1 · Reconocimiento</td><td>Alcance / Reproducciones de video</td><td>El showroom y el proceso a la medida: "de una foto a tu sala". Construye marca y audiencias.</td></tr>
+    <tr><td class="b">2 · Consideración</td><td>Interacción / Tráfico</td><td>Catálogo de sillones, comedores y camas; antes/después; tela y color a elección.</td></tr>
+    <tr><td class="b">3 · Conversión</td><td>Mensajes (WhatsApp) / Clientes potenciales</td><td>CTA directo a WhatsApp para cotizar y comprar de contado / apartar. Es el motor de ventas.</td></tr>
+    <tr><td class="b">4 · Retargeting</td><td>Mensajes / Ventas</td><td>A quienes ya interactuaron: recordatorio, prueba social y cierre de la venta de contado.</td></tr>
+  </table>
+
+  <h2 style="margin-top:8mm">Ángulos creativos</h2>
+  <p class="lead">Mensajes que atraen al comprador de contado y venden la personalización, no el crédito.</p>
+  <div class="grid2">
+    <div class="case v" style="margin:0">
+      <h4>Personalización</h4>
+      <span class="tag">El diferenciador que nadie más vende igual</span>
+      <p>"De una foto a tu sala." · "A tu medida, tu tela, tu color." · "Diseña el mueble que imaginaste." Mostrar el proceso: foto/video del cliente → mueble real.</p>
+    </div>
+    <div class="case" style="margin:0">
+      <h4>Contado y servicio</h4>
+      <span class="tag">Calidad e inmediatez para quien tiene con qué</span>
+      <p>"Llévatelo hoy del showroom." · "Te lo entregamos y armamos en casa." · "Muebles que duran, hechos para ti." Enfoque en calidad, exclusividad y servicio integral.</p>
+    </div>
+  </div>
+  <div class="accent" style="margin-top:4mm"><b>Formatos:</b> video corto (proceso a la medida y showroom), carrusel (variedad de sillones/comedores/camas) y colecciones/antes-después. La personalización se ve mejor en <b>video</b>.</div>
+</div>
+
+<!-- PÁG 5 · PRESUPUESTO + KPIs -->
+<div class="page">
+  <div class="head"><img src="_logo.png" alt="ECUS"><span class="pn mono">Fefa · Plan de Medios · 05</span></div>
+  <h2>Distribución de inversión</h2>
+  <p class="lead">Priorizamos la conversión (mensajes de venta) y el retargeting, con un piso de reconocimiento para alimentar el embudo. El monto total se confirma con el cliente; la distribución escala igual.</p>
+  <table>
+    <tr><th style="width:26%">Fase</th><th style="width:14%">% pauta</th><th style="width:20%">Ejemplo ($500/mes)</th><th>Qué logra</th></tr>
+    <tr><td class="b">Conversión (WhatsApp)</td><td class="b">50%</td><td>$250</td><td>Conversaciones de venta calificadas. El motor.</td></tr>
+    <tr><td class="b">Retargeting</td><td class="b">20%</td><td>$100</td><td>Cierra a los tibios; el costo más barato por venta.</td></tr>
+    <tr><td class="b">Reconocimiento</td><td class="b">20%</td><td>$100</td><td>Marca + construye audiencias frescas.</td></tr>
+    <tr><td class="b">Consideración</td><td class="b">10%</td><td>$50</td><td>Muestra el catálogo y nutre el interés.</td></tr>
+  </table>
+  <p style="font-size:7.5pt;color:#9a94bd;margin-top:1.5mm;line-height:1.4">Cifras de ejemplo, ajustables. La pauta se paga aparte, directo a Meta; ECUS gestiona, optimiza y reporta. Los resultados se recalibran con datos reales desde la primera semana.</p>
+
+  <h2 style="margin-top:8mm">Cómo medimos el éxito</h2>
+  <table>
+    <tr><th style="width:30%">KPI</th><th style="width:24%">Meta</th><th>Cómo se mide</th></tr>
+    <tr><td class="b">Conversaciones / leads</td><td>Flujo constante y medible</td><td>Mensajes iniciados en Meta</td></tr>
+    <tr><td class="b">Costo por conversación (CPA)</td><td>Se define por caso*</td><td>Pauta ÷ conversaciones</td></tr>
+    <tr><td class="b">Alcance segmentado</td><td>Según presupuesto y zona</td><td>Meta Ads (alcance)</td></tr>
+    <tr><td class="b">Interacción</td><td>CTR competitivo</td><td>Ads (CTR, video views)</td></tr>
+    <tr><td class="b">ROAS estimado</td><td>Alto (ticket $1,000–$1,400)*</td><td>Ventas de contado ÷ pauta</td></tr>
+  </table>
+  <div class="accent" style="margin-top:4mm"><b>La ventaja del ticket alto:</b> con muebles de $1,000–$1,400, <b>una sola venta de contado cubre buena parte del mes de pauta</b>. Por eso medimos el <b>costo por venta</b> y no solo el costo por clic. *Metas de referencia que se calibran con datos reales.</div>
+</div>
+
+<!-- PÁG 6 · CRONOGRAMA + NECESIDADES -->
+<div class="page">
+  <div class="head"><img src="_logo.png" alt="ECUS"><span class="pn mono">Fefa · Plan de Medios · 06</span></div>
+  <h2>Cronograma de arranque</h2>
+  <p class="lead">De cero a campañas entregando en dos semanas.</p>
+  <table>
+    <tr><th style="width:14%">Semana</th><th>Hito</th></tr>
+    <tr><td class="b">1</td><td>Accesos (página + cuenta), definición de audiencias, curaduría de fotos/videos y guion de creativos.</td></tr>
+    <tr><td class="b">1–2</td><td>Montaje: campañas de conversión + reconocimiento, WhatsApp Business y (opcional) píxel.</td></tr>
+    <tr><td class="b">2</td><td>Salida al aire. Primer reporte a los 7 días.</td></tr>
+    <tr><td class="b">4+</td><td>Optimización continua, retargeting activo y primer reporte mensual contra KPIs.</td></tr>
+  </table>
+
+  <h2 style="margin-top:8mm">Qué necesitamos para arrancar</h2>
+  <div class="grid2">
+    <div class="card">
+      <h4 style="font-size:10.5pt;font-weight:800;margin-bottom:2mm;color:var(--org)">Bloqueadores (acción del cliente)</h4>
+      <ul class="cl">
+        <li><b>Acceso a la página de Facebook</b> (rol de Anunciante) — sin esto no se pueden crear anuncios.</li>
+        <li><b>Confirmar la zona de entrega</b> a domicilio (define la geo).</li>
+        <li><b>Confirmar el presupuesto</b> mensual de pauta.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4 style="font-size:10.5pt;font-weight:800;margin-bottom:2mm;color:var(--vio)">Material y setup</h4>
+      <ul class="cl v">
+        <li><b>Fotos y videos</b> de muebles, del showroom y del proceso a la medida.</li>
+        <li><b>WhatsApp Business</b> para recibir y atender las conversaciones.</li>
+        <li><b>Píxel</b> (opcional) si se activa web o catálogo para conversiones.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="accent" style="margin-top:5mm"><b>Siguiente paso:</b> con la página compartida, el presupuesto y el material, ECUS monta las campañas y salimos al aire en ~2 semanas.</div>
+  <div class="foot"><span>ECUS Agency · ecus.agency · @ecusagency · Panamá</span><span class="mono">Plan de medios · Mueblería Fefa</span></div>
+</div>
+</body>
+</html>
