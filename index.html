@@ -143,6 +143,13 @@ td:first-child{font-family:'Space Mono',monospace;font-size:.72rem;text-transfor
 <div class="progress" id="progress"></div>
 <div class="deck" id="deck">
 
+<style>
+.card .ico{margin-bottom:.5rem;line-height:0;color:var(--orange)}
+.card .ico svg{width:30px;height:30px}
+.emoji svg{width:clamp(1.6rem,4vw,2.3rem);height:auto;display:block}
+.emoji svg,.card .ico svg{fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+</style>
+
 <!-- 1 · PORTADA -->
 <section class="slide max active"
   data-narr="Te presentamos el plan de medios de Mueblería Fefa, hecho por ECUS Agency, para llenar el showroom de clientes que compran de contado.">
@@ -150,9 +157,9 @@ td:first-child{font-family:'Space Mono',monospace;font-size:.72rem;text-transfor
   <div class="blob y" style="width:26vw;height:26vw;bottom:-8vw;left:-6vw"></div>
   <div class="grain"></div>
   <span class="sticker st-y" style="top:14%;left:8%;--rot:-8deg" data-step="3" data-say="A tu medida.">¡A TU MEDIDA!</span>
-  <span class="emoji" style="top:20%;right:12%;animation-delay:-1s" data-step="3" data-say="">🛋️</span>
+  <span class="emoji" style="top:20%;right:12%;animation-delay:-1s;color:var(--pink)" data-step="3"><svg viewBox="0 0 24 24"><path d="M5 12V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/><path d="M3 16v-2a2 2 0 0 1 4 0v1h10v-1a2 2 0 0 1 4 0v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M6 18v2M18 18v2"/></svg></span>
   <span class="sticker st-k" style="bottom:18%;right:9%;--rot:6deg" data-step="4" data-say="Hazlo con ecusencia.">HAZLO CON ECUSENCIA</span>
-  <span class="emoji" style="bottom:24%;left:10%;animation-delay:-2.5s" data-step="4" data-say="">✨</span>
+  <span class="emoji" style="bottom:24%;left:10%;animation-delay:-2.5s;color:var(--yellow)" data-step="4"><svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.3 17 14 18 21 12 17.5 6 21 7 14 2 9.3 9 9"/></svg></span>
   <div class="inner" style="text-align:center">
     <div class="logo" data-step="1" data-say="ECUS Agency."><span class="e">ECUS</span><span class="a">Agency</span></div>
     <h1 class="ftitle" style="margin:.5rem 0" data-step="1" data-say="Plan de medios. Mueblería Fefa.">Media Plan<br>Mueblería Fefa</h1>
@@ -169,10 +176,10 @@ td:first-child{font-family:'Space Mono',monospace;font-size:.72rem;text-transfor
     <h2 class="ftitle" style="color:var(--purple)" data-step="1" data-say="Panorama general.">Panorama general</h2>
     <p class="lead" data-step="2" data-say="Vendemos muebles a la medida. El gancho es la personalización, y el cliente ideal es quien compra de contado y quiere su mueble a su gusto.">Vendemos muebles a la medida. El gancho es la <span class="hl">personalización</span>, y el cliente ideal es quien <span class="hl">compra de contado</span> y quiere su mueble exactamente a su gusto.</p>
     <div class="cards c4">
-      <div class="card" data-step="3" data-say="Producto estrella: sillones, comedores y camas a la medida."><div class="ico">🛋️</div><h3>Producto estrella</h3><p>Sillones, comedores y camas a la medida</p></div>
-      <div class="card" data-step="4" data-say="El foco es la venta de contado, ticket de mil a mil cuatrocientos."><div class="ico">💳</div><h3>Foco</h3><p>Venta de contado · ticket $1,000–$1,400</p></div>
-      <div class="card" data-step="5" data-say="Cubrimos Ciudad de Panamá, su zona de entrega."><div class="ico">📍</div><h3>Cobertura</h3><p>Ciudad de Panamá</p></div>
-      <div class="card" data-step="6" data-say="Y el diferenciador: de una foto a tu sala."><div class="ico">✨</div><h3>Diferenciador</h3><p>De una foto a tu sala</p></div>
+      <div class="card" data-step="3" data-say="Producto estrella: sillones, comedores y camas a la medida."><div class="ico"><svg viewBox="0 0 24 24"><path d="M5 12V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/><path d="M3 16v-2a2 2 0 0 1 4 0v1h10v-1a2 2 0 0 1 4 0v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M6 18v2M18 18v2"/></svg></div><h3>Producto estrella</h3><p>Sillones, comedores y camas a la medida</p></div>
+      <div class="card" data-step="4" data-say="El foco es la venta de contado, ticket de mil a mil cuatrocientos."><div class="ico"><svg viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>Foco</h3><p>Venta de contado · ticket $1,000–$1,400</p></div>
+      <div class="card" data-step="5" data-say="Cubrimos Ciudad de Panamá, su zona de entrega."><div class="ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><h3>Cobertura</h3><p>Ciudad de Panamá</p></div>
+      <div class="card" data-step="6" data-say="Y el diferenciador: de una foto a tu sala."><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div><h3>Diferenciador</h3><p>De una foto a tu sala</p></div>
     </div>
   </div>
   <div class="foot-sig" style="color:var(--purple)">ECUS · MUEBLERÍA FEFA</div>
@@ -257,7 +264,7 @@ td:first-child{font-family:'Space Mono',monospace;font-size:.72rem;text-transfor
       <div class="bar"><div class="bl">Consideración</div><div class="bt"><div class="bf o" data-w="10">10%</div></div></div>
     </div>
     <p class="lead" style="margin-top:1rem;font-size:1rem" data-step="3" data-say="La distribución escala igual con cualquier monto. Con ticket alto, una sola venta cubre buena parte del mes.">La distribución <span class="hl">escala igual</span> con cualquier monto. Y con ticket de $1,000–$1,400, una sola venta de contado cubre buena parte del mes de pauta.</p>
-    <p class="lead" style="margin-top:1rem;font-size:1.05rem;background:var(--yellow);color:var(--ink);padding:.9rem 1.1rem;border-radius:14px;display:inline-block" data-step="4" data-say="Esta es la pregunta para ti: ¿de cuánto es el presupuesto mensual de pauta?">👉 <strong>Lo que necesitamos que confirmes:</strong> ¿de cuánto es el presupuesto mensual de pauta?</p>
+    <p class="lead" style="margin-top:1rem;font-size:1.05rem;background:var(--yellow);color:var(--ink);padding:.9rem 1.1rem;border-radius:14px;display:inline-block" data-step="4" data-say="Esta es la pregunta para ti: ¿de cuánto es el presupuesto mensual de pauta?"><strong>Lo que necesitamos que confirmes:</strong> ¿de cuánto es el presupuesto mensual de pauta?</p>
   </div>
   <div class="foot-sig" style="color:var(--purple)">ECUS · MUEBLERÍA FEFA</div>
 </section>
@@ -275,7 +282,7 @@ td:first-child{font-family:'Space Mono',monospace;font-size:.72rem;text-transfor
       <div class="card" data-step="3" data-say="Mes dos: optimizar. Más presupuesto al creativo ganador y afinamos el mensaje de contado."><span class="tag">Mes 2 · Optimizar</span><p>Más al ganador, afinar el mensaje de contado, preparar retargeting.</p></div>
       <div class="card" data-step="4" data-say="Mes tres: escalar. Retargeting y audiencias similares de quienes ya escribieron o compraron."><span class="tag k">Mes 3 · Escalar</span><p>Retargeting + Lookalike de compradores, escalar ganadores, reporte mensual.</p></div>
     </div>
-    <p class="lead" style="margin-top:1.2rem;font-size:1rem" data-step="5" data-say="Importante: medimos el costo por venta, no solo por clic. Con ticket alto, esa es la brújula.">⚠ Medimos el <span class="hl">costo por venta</span>, no solo el costo por clic. Con ticket alto, esa es la brújula del plan.</p>
+    <p class="lead" style="margin-top:1.2rem;font-size:1rem" data-step="5" data-say="Importante: medimos el costo por venta, no solo por clic. Con ticket alto, esa es la brújula.">Medimos el <span class="hl">costo por venta</span>, no solo el costo por clic. Con ticket alto, esa es la brújula del plan.</p>
   </div>
   <div class="foot-sig">ECUS · MUEBLERÍA FEFA</div>
 </section>
@@ -287,7 +294,7 @@ td:first-child{font-family:'Space Mono',monospace;font-size:.72rem;text-transfor
   <div class="blob k" style="width:26vw;height:26vw;bottom:-8vw;left:-4vw"></div>
   <div class="grain"></div>
   <span class="sticker st-o" style="top:16%;right:10%;--rot:8deg" data-step="3" data-say="">ECUSIÓNATE</span>
-  <span class="emoji" style="bottom:22%;right:14%;animation-delay:-1.5s" data-step="3" data-say="">🚀</span>
+  <span class="emoji" style="bottom:22%;right:14%;animation-delay:-1.5s;color:var(--yellow)" data-step="3"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></span>
   <div class="inner" style="text-align:center">
     <div class="logo-sm" data-step="1" data-say="">ECUS Agency</div>
     <h1 class="ftitle" style="margin:.4rem 0" data-step="1" data-say="Tú decides. Nosotros lo lanzamos.">Tú decides,<br>nosotros lo lanzamos.</h1>
