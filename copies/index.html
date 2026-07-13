@@ -1,68 +1,73 @@
 <!DOCTYPE html><html lang="es"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Copies · Mueblería Compra con Fefa · Panamá</title>
+<title>Copies + Previews · Mueblería Compra con Fefa</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 <style>
-:root{--vio:#3E2A9B;--vio-d:#2a1d70;--vio-l:#7b5cff;--org:#FE881C;--org-l:#ffa94d;--ink:#1e1b2e;--muted:#6b6480;--bg:#f6f4fb;--card:#fff;--sofas:#3E2A9B;--camas:#FE881C;--comedores:#0ea5e9}
+:root{--vio:#3E2A9B;--vio-d:#2a1d70;--org:#FE881C;--ink:#1e1b2e;--muted:#6b6480;--bg:#f6f4fb;--card:#fff;--sofas:#3E2A9B;--camas:#FE881C;--comedores:#0ea5e9}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:'Manrope',sans-serif;line-height:1.5}
-.wrap{max-width:1080px;margin:0 auto;padding:clamp(1.2rem,3vw,2.4rem)}
+.wrap{max-width:1120px;margin:0 auto;padding:clamp(1.2rem,3vw,2.4rem)}
 header{background:linear-gradient(135deg,#241663,#3E2A9B 58%,#FE881C);color:#fff;border-radius:24px;padding:clamp(1.6rem,4vw,2.8rem);box-shadow:0 18px 40px rgba(62,42,155,.28)}
 header .kw{font-family:'Space Mono',monospace;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;opacity:.9}
-header h1{font-size:clamp(2rem,6vw,3.4rem);margin:.4rem 0 .3rem;font-weight:800;letter-spacing:-.02em}
+header h1{font-size:clamp(2rem,6vw,3.2rem);margin:.4rem 0 .3rem;font-weight:800;letter-spacing:-.02em}
 header h1 b{color:#FFD9B0}
-header p{font-size:clamp(1rem,2.2vw,1.15rem);max-width:62ch;opacity:.95;margin:.3rem 0 0}
+header p{font-size:clamp(1rem,2.2vw,1.12rem);max-width:64ch;opacity:.95;margin:.3rem 0 0}
 .tag{display:inline-block;font-family:'Space Mono',monospace;font-size:.62rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:.32rem .7rem;border-radius:20px}
 .t-sofas{background:rgba(62,42,155,.12);color:var(--sofas)}.t-camas{background:rgba(254,136,28,.14);color:#c2560c}.t-comedores{background:rgba(14,165,233,.12);color:#0369a1}.t-all{background:#eef1fb;color:#4b4b8a}
 h2.sec{font-size:clamp(1.4rem,3.5vw,2rem);font-weight:800;letter-spacing:-.01em;margin:2.4rem 0 1rem;display:flex;align-items:center;gap:.6rem}
 h2.sec .n{font-family:'Space Mono',monospace;color:var(--vio);font-size:.9em}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .panel{background:var(--card);border:1.5px solid #ece7f6;border-radius:18px;padding:1.2rem 1.3rem;box-shadow:0 6px 18px rgba(30,27,46,.05)}
-.panel h3{margin:.1rem 0 .5rem;font-size:1.12rem;font-weight:800}
 .panel.a{border-top:4px solid var(--vio)}.panel.b{border-top:4px solid var(--org)}
-.audhdr{display:flex;align-items:center;gap:.5rem;font-weight:800;font-size:1.02rem;margin:.2rem 0 .7rem}
-.copy{border-left:3px solid #e7e1f3;padding:.55rem 0 .55rem .9rem;margin:.75rem 0}
-.copy .hl{font-weight:800;color:var(--ink);font-size:1.02rem;display:block;margin-bottom:.25rem}
-.copy .tx{color:#443f57;font-size:.95rem}
-.copy .cta{display:inline-block;margin-top:.5rem;font-size:.78rem;font-weight:700;color:#fff;background:var(--vio);padding:.32rem .85rem;border-radius:20px}
-.creative{background:var(--card);border:1.5px solid #ece7f6;border-radius:20px;padding:1.3rem 1.4rem;margin:1rem 0;box-shadow:0 8px 22px rgba(30,27,46,.06)}
-.creative .top{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin-bottom:.2rem}
-.creative .top h3{margin:0;font-size:1.22rem;font-weight:800;flex:1;min-width:200px}
-.creative .desc{color:var(--muted);font-size:.92rem;margin:.2rem 0 .7rem}
-.chips{display:flex;gap:.4rem;flex-wrap:wrap;margin:.5rem 0 .2rem}
-.chips small{font-family:'Space Mono',monospace;font-size:.6rem;background:#f0ecfa;color:var(--vio-d);padding:.25rem .6rem;border-radius:14px;text-transform:uppercase;letter-spacing:.04em}
+.audhdr{font-weight:800;font-size:1.02rem;margin:.2rem 0 .6rem}
+.note{background:#fff7ed;border:1.5px solid #fed7aa;border-radius:14px;padding:.9rem 1.1rem;font-size:.92rem;color:#9a3412}
+.note b{color:#7c2d12}
 .filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.6rem 0 .4rem;position:sticky;top:0;background:var(--bg);padding:.6rem 0;z-index:5}
 .fbtn{cursor:pointer;border:1.5px solid #d9d2ec;background:#fff;color:var(--ink);font-weight:700;font-size:.85rem;padding:.5rem 1rem;border-radius:22px;transition:.15s}
 .fbtn.on{background:var(--vio);color:#fff;border-color:var(--vio)}
-.note{background:#fff7ed;border:1.5px solid #fed7aa;border-radius:14px;padding:.9rem 1.1rem;font-size:.92rem;color:#9a3412}
-.note b{color:#7c2d12}
+/* creativo con preview */
+.creative{background:var(--card);border:1.5px solid #ece7f6;border-radius:20px;padding:1.3rem 1.4rem;margin:1.1rem 0;box-shadow:0 8px 22px rgba(30,27,46,.06)}
+.cgrid{display:grid;grid-template-columns:290px 1fr;gap:1.4rem}
+.cimg{position:relative;align-self:start;position:sticky;top:72px}
+.cimg img{width:100%;border-radius:14px;display:block;aspect-ratio:4/5;object-fit:cover;box-shadow:0 8px 22px rgba(30,27,46,.14)}
+.cimg .imgtag{position:absolute;bottom:9px;left:9px;background:rgba(20,12,45,.72);color:#fff;font-family:'Space Mono',monospace;font-size:.58rem;letter-spacing:.06em;text-transform:uppercase;padding:.28rem .6rem;border-radius:10px}
+.chead{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem}
+.chead h3{margin:0;font-size:1.2rem;font-weight:800;flex:1;min-width:180px}
+.cdesc{color:var(--muted);font-size:.9rem;margin:.25rem 0 .8rem}
+.var{border:1px solid #ece7f6;border-left:3px solid var(--vio);border-radius:12px;padding:.85rem 1rem;margin:.7rem 0;background:#fbfaff}
+.var .vnum{font-family:'Space Mono',monospace;font-size:.6rem;text-transform:uppercase;letter-spacing:.06em;color:var(--vio);font-weight:700;margin-bottom:.35rem}
+.field{margin:.4rem 0}
+.field .fl{font-family:'Space Mono',monospace;font-size:.58rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700;display:block;margin-bottom:.05rem}
+.field p{margin:0;font-size:.92rem;color:#443f57}
+.field p.tit{font-weight:800;color:var(--ink);font-size:.98rem}
+.cta{display:inline-block;font-size:.74rem;font-weight:700;color:#fff;background:var(--vio);padding:.3rem .8rem;border-radius:20px}
 .hide{display:none !important}
 footer{text-align:center;color:var(--muted);font-size:.82rem;margin:2.5rem 0 1rem}
-@media(max-width:720px){.grid2{grid-template-columns:1fr}}
+@media(max-width:760px){.grid2{grid-template-columns:1fr}.cgrid{grid-template-columns:1fr}.cimg{position:static}.cimg img{max-width:320px;margin:0 auto}}
 </style></head><body>
 <div class="wrap">
 
 <header>
-  <div class="kw">Guía de copies · Compra con Fefa · Panamá</div>
-  <h1>Copies para <b>Mueblería Fefa</b><br>Muebles a la medida y showroom</h1>
-  <p>3 versiones de copy y titular por creativo, organizados por tipo de mueble. Foco en la <b>venta de contado</b> y la <b>personalización</b>; las facilidades de pago van como segundo gancho. Copia, pega y lanza.</p>
+  <div class="kw">Copies + Previews · Compra con Fefa · Panamá</div>
+  <h1>Copies listos para <b>subir a Meta</b><br>con su preview y 3 variaciones</h1>
+  <p>Cada creativo trae su <b>imagen</b> y <b>3 variaciones</b> de copy, ya divididas en los campos de Meta: <b>Texto primario · Titular · Descripción · CTA</b>. Foco en venta de contado y personalización; facilidades de pago como segundo gancho. Copia, pega y publica.</p>
 </header>
 
 <h2 class="sec"><span class="n">01</span> La estrategia del mensaje</h2>
 <div class="grid2">
   <div class="panel a">
     <div class="audhdr">A quién le hablamos</div>
-    <p style="margin:.2rem 0;color:#443f57;font-size:.95rem"><b>Público:</b> familias y parejas 28–55 en <b>Ciudad de Panamá y La Chorrera</b> que están amueblando o renovando (casa nueva, mudanza, remodelación) y compran de contado.</p>
-    <p style="margin:.5rem 0 0;color:#443f57;font-size:.95rem"><b>Tono:</b> cálido, aspiracional y cercano. Vende la <i>transformación del hogar</i> y lo <b>hecho a tu medida</b> — "de una foto a tu sala".</p>
+    <p style="margin:.2rem 0;color:#443f57;font-size:.95rem"><b>Público:</b> familias y parejas 28–55 en <b>Ciudad de Panamá y La Chorrera</b> que amueblan o renuevan (casa nueva, mudanza, remodelación) y compran de contado.</p>
+    <p style="margin:.5rem 0 0;color:#443f57;font-size:.95rem"><b>Tono:</b> cálido, aspiracional y cercano. Vende la <i>transformación del hogar</i> y lo <b>hecho a tu medida</b>.</p>
   </div>
   <div class="panel b">
     <div class="audhdr">Los ganchos, en orden</div>
-    <p style="margin:.2rem 0;color:#443f57;font-size:.95rem"><b>1 · Principal:</b> compra de contado + personalización (tela, color, medida) + variedad del showroom (camas Queen, King e individuales, comedores).</p>
-    <p style="margin:.5rem 0 0;color:#443f57;font-size:.95rem"><b>2 · Segundo gancho:</b> facilidades de pago (Kredi Ya / Tafi, abonos desde $50–$100, hasta 4 meses). <b>3 · Cierre:</b> entrega a domicilio y armado incluido.</p>
+    <p style="margin:.2rem 0;color:#443f57;font-size:.95rem"><b>1 · Principal:</b> compra de contado + personalización (tela, color, medida) + variedad del showroom.</p>
+    <p style="margin:.5rem 0 0;color:#443f57;font-size:.95rem"><b>2 · Segundo gancho:</b> facilidades de pago (Kredi Ya / Tafi, abonos $50–$100, hasta 4 meses). <b>3 · Cierre:</b> entrega a domicilio y armado incluido.</p>
   </div>
 </div>
-<div class="note" style="margin-top:1rem"><b>Regla de oro:</b> el gancho principal es <b>contado + personalización</b>. Las facilidades de pago se mencionan como apoyo (para quien las necesita), nunca como el titular principal. Cada anuncio lleva CTA claro al formulario / WhatsApp.</div>
+<div class="note" style="margin-top:1rem"><b>Cómo subirlo a Meta:</b> cada variación ya viene con <b>Texto primario</b> (lo de arriba de la imagen), <b>Titular</b>, <b>Descripción</b> y <b>CTA</b> (botón). Sube la imagen del creativo, pega los campos y activa. El gancho principal es contado + personalización; las facilidades de pago van sobre todo en retargeting.</div>
 
 <div class="filters">
   <span style="align-self:center;font-family:'Space Mono',monospace;font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-right:.3rem">Filtrar:</span>
@@ -74,84 +79,188 @@ footer{text-align:center;color:var(--muted);font-size:.82rem;margin:2.5rem 0 1re
 
 <h2 class="sec"><span class="n">02</span> Copies por creativo</h2>
 
-<!-- 1 · SOFÁS personalización -->
+<!-- 1 · SOFÁS varios colores -->
 <div class="creative" data-prod="sofas">
-  <div class="top"><h3>Sofá a la medida · tela, color y tamaño a tu gusto</h3><span class="tag t-sofas">Sofás / Salas</span></div>
-  <div class="desc">Foto/video de un sofá elegante, con detalle de telas y colores. Muestra la personalización.</div>
-  <div class="chips"><small>Personalización</small><small>Contado</small><small>Sala</small></div>
-  <div class="copy"><span class="hl">1 · "Tu sala, tu sofá, tu medida."</span><span class="tx">Elige la tela, el color y el tamaño exacto para tu espacio. Fabricamos tu sofá a la medida, aquí en Panamá. De una foto a tu sala. Cotiza hoy y llévatelo cuando esté listo.</span><span class="cta">Cotiza tu sofá →</span></div>
-  <div class="copy"><span class="hl">2 · "El sofá que imaginaste, hecho realidad."</span><span class="tx">Nada de conformarte con lo que hay en tienda. Diseña el sofá perfecto para tu sala: tú eliges tela, color y medida, nosotros lo fabricamos. Escríbenos y cuéntanos cómo lo quieres.</span><span class="cta">Diseña el tuyo →</span></div>
-  <div class="copy"><span class="hl">3 · "Un sofá a tu medida cuesta menos de lo que crees."</span><span class="tx">Calidad, diseño y el tamaño perfecto para tu casa. Y si lo necesitas, con facilidades de pago. Pide tu cotización sin compromiso.</span><span class="cta">Quiero cotizar →</span></div>
+  <div class="cgrid">
+    <div class="cimg"><img src="img/sofa.jpg" alt="Sofá a la medida"><span class="imgtag">Creativo · Sofá</span></div>
+    <div>
+      <div class="chead"><h3>Sofá a la medida · en varios colores</h3><span class="tag t-sofas">Sofás / Salas</span></div>
+      <div class="cdesc">Foto de sofá con opción de colores. Gancho: personalización de tela y color.</div>
+      <div class="var"><div class="vnum">Variación 1</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Tu sofá no tiene que ser como el de todos. Elige la tela, el color y la medida exacta para tu sala — lo fabricamos a tu gusto, aquí en Panamá. Cotiza hoy sin compromiso.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Tu sofá, a tu medida y color</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Muebles a la medida · Panamá</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Enviar mensaje</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 2</div>
+        <div class="field"><span class="fl">Texto primario</span><p>¿Viste un sofá que te encantó pero no venía en tu color? Con Compra con Fefa lo haces a tu gusto: tú eliges tela, color y tamaño. De una foto a tu sala. Escríbenos y cotiza gratis.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Adquiérelo en varios colores</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Diseña el tuyo</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Enviar mensaje</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 3</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Un sofá a la medida cuesta menos de lo que crees — y le queda perfecto a tu sala. Calidad, diseño y el tamaño justo para tu espacio. Y si lo necesitas, con facilidades de pago.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Sofás a la medida en Panamá</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Contado o a plazos</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Más información</span></div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- 2 · SOFÁS showroom / contado -->
+<!-- 2 · SALAS showroom / contado -->
 <div class="creative" data-prod="sofas">
-  <div class="top"><h3>Showroom · "Llévatelo hoy"</h3><span class="tag t-sofas">Sofás / Salas</span></div>
-  <div class="desc">Foto del showroom con salas listas para llevar. Gancho de disponibilidad inmediata y contado.</div>
-  <div class="chips"><small>Showroom</small><small>Inmediato</small><small>Contado</small></div>
-  <div class="copy"><span class="hl">1 · "¿Te enamoraste? Llévatelo hoy."</span><span class="tx">Lo que ves en nuestro showroom te lo puedes llevar de una vez. Salas listas, con la calidad Fefa. Y te lo entregamos y armamos en tu casa. Ven o escríbenos.</span><span class="cta">Ver disponibles →</span></div>
-  <div class="copy"><span class="hl">2 · "Tu sala nueva, lista este fin de semana."</span><span class="tx">No esperes semanas: en nuestro showroom hay salas listas para entrega. Elige la tuya, la llevamos y la armamos. Contado o a plazos, tú decides.</span><span class="cta">Escríbenos →</span></div>
-  <div class="copy"><span class="hl">3 · "Renová tu sala sin complicarte."</span><span class="tx">Disponibilidad inmediata en showroom + entrega a domicilio con armado incluido. La sala que querías, sin vueltas. Consulta la disponibilidad de hoy.</span><span class="cta">Quiero verla →</span></div>
+  <div class="cgrid">
+    <div class="cimg"><img src="img/sala.jpg" alt="Sala en showroom"><span class="imgtag">Creativo · Sala / Showroom</span></div>
+    <div>
+      <div class="chead"><h3>Showroom · "Llévatelo hoy"</h3><span class="tag t-sofas">Sofás / Salas</span></div>
+      <div class="cdesc">Sala lista en showroom. Gancho: contado + disponibilidad inmediata + entrega/armado.</div>
+      <div class="var"><div class="vnum">Variación 1</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Que tu sala sea tu spot favorito. En nuestro showroom tienes salas listas para llevar, con la calidad Fefa — y te las entregamos y armamos en casa. Ven o escríbenos.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">¿Te enamoraste? Llévatelo hoy</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Showroom · entrega + armado</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Cómo llegar</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 2</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Tu sala nueva, lista este fin de semana. No esperes semanas: elige la tuya en showroom, la llevamos y la armamos. Contado o a plazos, tú decides. Consulta disponibilidad.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Salas listas para entrega</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Cd. de Panamá y La Chorrera</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Enviar mensaje</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 3</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Renová tu sala sin complicarte: disponibilidad inmediata en showroom + entrega a domicilio con armado incluido. La sala que querías, sin vueltas.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Tu sala favorita te espera</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Llévatela hoy</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Más información</span></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- 3 · CAMAS -->
 <div class="creative" data-prod="camas">
-  <div class="top"><h3>Camas · Individual, Queen y King</h3><span class="tag t-camas">Camas</span></div>
-  <div class="desc">Foto de una cama elegante (King/Queen), cabecera tapizada. Resalta tamaños y personalización.</div>
-  <div class="chips"><small>Descanso</small><small>Tamaños</small><small>A medida</small></div>
-  <div class="copy"><span class="hl">1 · "El cuarto que mereces empieza por tu cama."</span><span class="tx">Camas Individual, Queen y King, con la cabecera, la tela y el color que van con tu cuarto. Hechas a tu medida en Panamá. Diséñala a tu gusto y llévatela.</span><span class="cta">Cotiza tu cama →</span></div>
-  <div class="copy"><span class="hl">2 · "Una cama que se ve tan bien como se siente."</span><span class="tx">Elige tamaño (Individual, Queen o King), tela y color. Fabricamos tu cama a la medida para que tu cuarto se vea de revista. Pide tu diseño sin costo.</span><span class="cta">Diseña la tuya →</span></div>
-  <div class="copy"><span class="hl">3 · "Cámbiate a una King sin cambiar de casa."</span><span class="tx">Dale a tu cuarto el upgrade que pedía. Camas a la medida, entrega a domicilio y armado incluido. Con facilidades de pago si las necesitas.</span><span class="cta">Quiero cotizar →</span></div>
+  <div class="cgrid">
+    <div class="cimg"><img src="img/cama.jpg" alt="Cama a la medida"><span class="imgtag">Creativo · Cama</span></div>
+    <div>
+      <div class="chead"><h3>Camas · Individual, Queen y King</h3><span class="tag t-camas">Camas</span></div>
+      <div class="cdesc">Cama con cabecera tapizada. Gancho: tamaños + personalización (tela/color).</div>
+      <div class="var"><div class="vnum">Variación 1</div>
+        <div class="field"><span class="fl">Texto primario</span><p>El cuarto que mereces empieza por tu cama. Individual, Queen o King — con la cabecera, tela y color que van con tu espacio, hechas a tu medida en Panamá. Cotiza la tuya.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Camas a la medida: Ind., Queen, King</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Diséñala a tu gusto</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Enviar mensaje</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 2</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Una cama que se ve tan bien como se siente. Elige tamaño, tela y color; la fabricamos para que tu cuarto se vea de revista. Pide tu diseño sin costo.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Tu cuarto, de revista</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Cabecera y tela a elección</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Más información</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 3</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Cámbiate a una King sin cambiar de casa. Dale a tu cuarto el upgrade que pedía: camas a la medida, entrega a domicilio y armado incluido. Con facilidades de pago si las necesitas.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Duerme como te mereces</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Contado o a plazos</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Enviar mensaje</span></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- 4 · COMEDORES -->
 <div class="creative" data-prod="comedores">
-  <div class="top"><h3>Juegos de comedor · para reunir a los tuyos</h3><span class="tag t-comedores">Comedores</span></div>
-  <div class="desc">Foto de un comedor puesto, cálido, familiar. Gancho emocional de reunión + personalización.</div>
-  <div class="chips"><small>Familia</small><small>A medida</small><small>Showroom</small></div>
-  <div class="copy"><span class="hl">1 · "La mesa donde va a pasar todo."</span><span class="tx">Almuerzos de domingo, tareas, sobremesas largas. Tu juego de comedor a la medida de tu espacio y tu familia — elige tamaño, acabado y sillas. Cotiza el tuyo.</span><span class="cta">Cotiza tu comedor →</span></div>
-  <div class="copy"><span class="hl">2 · "Un comedor a tu medida, para tu casa real."</span><span class="tx">¿Espacio justo o para 8? Lo hacemos a la medida, con el estilo que combina con tu casa. De una foto a tu comedor. Pide tu diseño sin costo.</span><span class="cta">Diseña el tuyo →</span></div>
-  <div class="copy"><span class="hl">3 · "Estrena comedor este mes."</span><span class="tx">Modelos listos en showroom y a la medida. Entrega a domicilio y armado incluido. Contado o con facilidades de pago. Consulta disponibilidad.</span><span class="cta">Quiero verlo →</span></div>
+  <div class="cgrid">
+    <div class="cimg"><img src="img/comedor.jpg" alt="Comedor a la medida"><span class="imgtag">Creativo · Comedor</span></div>
+    <div>
+      <div class="chead"><h3>Juegos de comedor · para reunir a los tuyos</h3><span class="tag t-comedores">Comedores</span></div>
+      <div class="cdesc">Comedor puesto, cálido. Gancho: reunión familiar + personalización.</div>
+      <div class="var"><div class="vnum">Variación 1</div>
+        <div class="field"><span class="fl">Texto primario</span><p>La mesa donde va a pasar todo: almuerzos de domingo, tareas, sobremesas largas. Tu juego de comedor a la medida de tu espacio y tu familia — elige tamaño, acabado y sillas. Cotiza el tuyo.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">El comedor que reúne a los tuyos</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>A la medida · Panamá</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Enviar mensaje</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 2</div>
+        <div class="field"><span class="fl">Texto primario</span><p>¿Espacio justo o para 8? Diseñamos tu comedor a la medida, con el estilo que combina con tu casa. De una foto a tu comedor. Pide tu diseño sin costo.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Diseña tu comedor a tu estilo</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Tamaño y acabado a elección</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Más información</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 3</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Estrena comedor este mes. Modelos listos en showroom y a la medida, con entrega a domicilio y armado incluido. Contado o con facilidades de pago. Consulta disponibilidad.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Estrena comedor este mes</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Showroom + a la medida</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Cómo llegar</span></div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- 5 · DE UNA FOTO A TU SALA (personalización, todos) -->
+<!-- 5 · A LA MEDIDA / PERSONALIZACIÓN -->
 <div class="creative" data-prod="all">
-  <div class="top"><h3>Personalización · "De una foto a tu mueble"</h3><span class="tag t-all">Todos los muebles</span></div>
-  <div class="desc">Video/carrusel del proceso: la foto o referencia del cliente → el mueble real terminado. El diferenciador estrella.</div>
-  <div class="chips"><small>Diferenciador</small><small>Proceso</small><small>A medida</small></div>
-  <div class="copy"><span class="hl">1 · "Mándanos una foto. Te lo hacemos igual (o mejor)."</span><span class="tx">¿Viste un mueble que te encantó? Envíanos la foto o el video y lo fabricamos a tu medida: tu tela, tu color, tu tamaño. Así de fácil es tener el mueble que quieres. Escríbenos 📩</span><span class="cta">Enviar mi idea →</span></div>
-  <div class="copy"><span class="hl">2 · "Tú lo imaginas, nosotros lo fabricamos."</span><span class="tx">Sofás, camas y comedores hechos a tu medida en Panamá. De una foto a tu sala, sin conformarte con lo que hay en tienda. Cuéntanos qué buscas y te cotizamos.</span><span class="cta">Cotiza a tu medida →</span></div>
-  <div class="copy"><span class="hl">3 · "Muebles a tu medida, a tu gusto, a tu casa."</span><span class="tx">Diseño personalizado + entrega a domicilio con armado incluido. Y si lo necesitas, facilidades de pago. Pide tu cotización hoy.</span><span class="cta">Quiero cotizar →</span></div>
+  <div class="cgrid">
+    <div class="cimg"><img src="img/medida.jpg" alt="Muebles a la medida"><span class="imgtag">Creativo · A la medida</span></div>
+    <div>
+      <div class="chead"><h3>Personalización · "De una foto a tu mueble"</h3><span class="tag t-all">Todos los muebles</span></div>
+      <div class="cdesc">El diferenciador estrella. Sirve para sofás, camas y comedores. Mejor gancho de conversión.</div>
+      <div class="var"><div class="vnum">Variación 1</div>
+        <div class="field"><span class="fl">Texto primario</span><p>¿Por qué elegir muebles a la medida? Porque le quedan perfectos a TU casa. Mándanos una foto o una idea y lo fabricamos a tu gusto: tu tela, tu color, tu tamaño. Así de fácil.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Mándanos una foto. Te lo hacemos.</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>De una foto a tu mueble</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Enviar mensaje</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 2</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Tú lo imaginas, nosotros lo fabricamos. Sofás, camas y comedores hechos a tu medida en Panamá — sin conformarte con lo que hay en tienda. Cuéntanos qué buscas y te cotizamos.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Muebles a tu medida y tu gusto</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Elige colores y telas</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Más información</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 3</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Muebles a tu medida, a tu gusto, a tu casa. Diseño personalizado + entrega a domicilio con armado incluido. Y si lo necesitas, facilidades de pago. Pide tu cotización hoy.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Diseña según tu estilo</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Fabricado en Panamá</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Enviar mensaje</span></div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- 6 · FACILIDADES DE PAGO (segundo gancho, todos) -->
+<!-- 6 · FACILIDADES DE PAGO -->
 <div class="creative" data-prod="all">
-  <div class="top"><h3>Facilidades de pago · segundo gancho</h3><span class="tag t-all">Todos los muebles</span></div>
-  <div class="desc">Estático/carrusel con el mensaje de financiamiento. Úsalo como apoyo/retargeting, no como titular principal.</div>
-  <div class="chips"><small>Financiamiento</small><small>Retargeting</small><small>Apoyo</small></div>
-  <div class="copy"><span class="hl">1 · "Amuebla tu casa hoy y paga con facilidad."</span><span class="tx">Con Kredi Ya y Tafi puedes llevarte tu mueble a la medida y pagarlo a plazos. Abonos iniciales desde $50–$100 y hasta 4 meses. Consulta tu opción de pago.</span><span class="cta">Ver facilidades →</span></div>
-  <div class="copy"><span class="hl">2 · "Apártalo desde $50 y sepáralo para ti."</span><span class="tx">¿Ya sabes cuál quieres? Con un abono inicial lo apartas, y tienes hasta 4 meses para terminar de pagarlo. Sin complicarte. Escríbenos y te explicamos.</span><span class="cta">Quiero apartarlo →</span></div>
-  <div class="copy"><span class="hl">3 · "Tu mueble nuevo, a tu ritmo."</span><span class="tx">Contado o a plazos con Kredi Ya y Tafi — tú eliges cómo pagar. Lo importante: llevarte el mueble que quieres, a tu medida. Cotiza sin compromiso.</span><span class="cta">Cotiza ahora →</span></div>
-</div>
-
-<!-- 7 · LOGÍSTICA / SERVICIO (todos) -->
-<div class="creative" data-prod="all">
-  <div class="top"><h3>Servicio · Entrega a domicilio y armado incluido</h3><span class="tag t-all">Todos los muebles</span></div>
-  <div class="desc">Video/foto del equipo entregando y armando el mueble en casa del cliente. Vende la tranquilidad.</div>
-  <div class="chips"><small>Servicio</small><small>Confianza</small><small>Sin estrés</small></div>
-  <div class="copy"><span class="hl">1 · "Tú lo eliges. Nosotros lo llevamos y lo armamos."</span><span class="tx">Nada de cargar cajas ni pelear con instrucciones. Te entregamos tu mueble a domicilio en Ciudad de Panamá y La Chorrera, y te lo dejamos armado y listo para usar.</span><span class="cta">Cotiza tu mueble →</span></div>
-  <div class="copy"><span class="hl">2 · "De nuestro taller a tu casa, sin que muevas un dedo."</span><span class="tx">Fabricamos a tu medida, lo entregamos y lo armamos por ti. Un servicio completo para que solo te preocupes por disfrutarlo. Pide tu cotización.</span><span class="cta">Quiero el mío →</span></div>
-  <div class="copy"><span class="hl">3 · "Entrega y armado incluido. Así de fácil."</span><span class="tx">Compra con Fefa y recibe tu mueble listo en casa. Contado o con facilidades de pago. Escríbenos y coordina tu entrega.</span><span class="cta">Escríbenos →</span></div>
+  <div class="cgrid">
+    <div class="cimg"><img src="img/pago.jpg" alt="Facilidades de pago"><span class="imgtag">Creativo · Facilidades de pago</span></div>
+    <div>
+      <div class="chead"><h3>Facilidades de pago · segundo gancho</h3><span class="tag t-all">Todos · Retargeting</span></div>
+      <div class="cdesc">Úsalo como apoyo y en retargeting (a quien ya vio y no compró). No como titular principal.</div>
+      <div class="var"><div class="vnum">Variación 1</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Amuebla tu casa hoy y paga con facilidad. Con Kredi Ya y Tafi te llevas tu mueble a la medida y lo pagas a plazos: abonos desde $50–$100 y hasta 4 meses. Consulta tu opción de pago.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Escoge el mueble que te guste más</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Con Kredi Ya y Tafi</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Más información</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 2</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Apártalo desde $50 y sepáralo para ti. ¿Ya sabes cuál quieres? Con un abono inicial lo apartas y tienes hasta 4 meses para terminar de pagarlo. Sin complicarte. Escríbenos.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Apártalo desde $50</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Hasta 4 meses para pagar</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Enviar mensaje</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 3</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Tu mueble nuevo, a tu ritmo. Contado o a plazos con Kredi Ya y Tafi — tú eliges cómo pagar. Lo importante: llevarte el mueble que quieres, a tu medida. Cotiza sin compromiso.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Contado o a plazos, tú decides</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Facilidades de pago</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Más información</span></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <h2 class="sec"><span class="n">03</span> Notas para pauta</h2>
 <div class="note">
   <p style="margin:.2rem 0"><b>Público:</b> familias y parejas 28–55 en <b>Ciudad de Panamá y La Chorrera</b> (zona de entrega). Intereses: decoración, diseño de interiores, mobiliario, mejoras del hogar, casa nueva, recién casados, recién mudados, bienes raíces.</p>
   <p style="margin:.5rem 0 0"><b>Prioridad de mensaje:</b> 1) contado + personalización, 2) facilidades de pago (apoyo/retargeting), 3) entrega + armado.</p>
-  <p style="margin:.5rem 0 0"><b>Tip de creativo:</b> el <b>"de una foto a tu mueble"</b> es el mejor gancho de conversión; los de <b>showroom / llévatelo hoy</b> empujan el contado; los de <b>facilidades de pago</b> funcionan mejor en <b>retargeting</b> (a quien ya vio y no compró). Cada anuncio con CTA claro al formulario o WhatsApp.</p>
+  <p style="margin:.5rem 0 0"><b>Tip:</b> el <b>"de una foto a tu mueble"</b> es el mejor gancho de conversión; los de <b>showroom / llévatelo hoy</b> empujan el contado; los de <b>facilidades de pago</b> rinden mejor en <b>retargeting</b>. Hay más material (fotos y videos por producto) listo para rotar creativos.</p>
 </div>
 
-<footer>Mueblería Compra con Fefa · Guía de copies · hecho por ECUS Agency · 2026</footer>
+<footer>Mueblería Compra con Fefa · Copies + Previews · hecho por ECUS Agency · 2026</footer>
 </div>
 
 <script>
@@ -161,8 +270,7 @@ function setF(btn){
   var f=btn.getAttribute('data-f');
   document.querySelectorAll('.creative').forEach(function(c){
     var prod=c.getAttribute('data-prod');
-    var show = f==='all' || prod==='all' || prod===f;
-    c.classList.toggle('hide', !show);
+    c.classList.toggle('hide', !(f==='all'||prod==='all'||prod===f));
   });
 }
 </script>
