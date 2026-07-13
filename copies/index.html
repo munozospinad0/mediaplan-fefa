@@ -42,6 +42,9 @@ h2.sec .n{font-family:'Space Mono',monospace;color:var(--vio);font-size:.9em}
 .field p{margin:0;font-size:.92rem;color:#443f57}
 .field p.tit{font-weight:800;color:var(--ink);font-size:.98rem}
 .cta{display:inline-block;font-size:.74rem;font-weight:700;color:#fff;background:var(--vio);padding:.3rem .8rem;border-radius:20px}
+.carstrip img{width:100%;border-radius:12px;display:block;box-shadow:0 8px 22px rgba(30,27,46,.12);margin:.3rem 0 1rem}
+.playbadge{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:rgba(20,12,45,.5);border:2px solid rgba(255,255,255,.92);display:grid;place-items:center;pointer-events:none}
+.playbadge svg{width:22px;height:22px;fill:#fff;margin-left:3px}
 .hide{display:none !important}
 footer{text-align:center;color:var(--muted);font-size:.82rem;margin:2.5rem 0 1rem}
 @media(max-width:760px){.grid2{grid-template-columns:1fr}.cgrid{grid-template-columns:1fr}.cimg{position:static}.cimg img{max-width:320px;margin:0 auto}}
@@ -253,7 +256,162 @@ footer{text-align:center;color:var(--muted);font-size:.82rem;margin:2.5rem 0 1re
   </div>
 </div>
 
-<h2 class="sec"><span class="n">03</span> Notas para pauta</h2>
+<h2 class="sec"><span class="n">03</span> Carruseles</h2>
+<p style="margin:-.4rem 0 1rem 22px;color:var(--muted);font-size:.85rem">Un solo <b>Texto primario</b> para todo el carrusel; las tarjetas ya traen su mensaje. Aquí va también el titular, la descripción y el CTA.</p>
+
+<!-- CARRUSEL · PERSONALIZACIÓN -->
+<div class="creative wide" data-prod="all">
+  <div class="chead"><h3>Carrusel · Muebles a la medida</h3><span class="tag t-all">Carrusel · Todos</span></div>
+  <div class="cdesc">4 tarjetas: ¿Por qué a la medida? → Aprovechas tus espacios → Diseñas según tu estilo → Eliges colores y telas.</div>
+  <div class="carstrip"><img src="img/car-personaliza.jpg" alt="Carrusel personalización"></div>
+  <div class="var"><div class="vnum">Variación 1</div>
+    <div class="field"><span class="fl">Texto primario</span><p>¿Por qué mandar a hacer tus muebles a la medida? Porque aprovechas cada espacio, diseñas según tu estilo y eliges los colores y telas que van con tu casa. Desliza y míralo. Cotiza el tuyo sin compromiso.</p></div>
+    <div class="field"><span class="fl">Titular</span><p class="tit">Muebles a la medida, a tu estilo</p></div>
+    <div class="field"><span class="fl">Descripción</span><p>Elige colores y telas</p></div>
+    <div class="field"><span class="fl">CTA</span><span class="cta">Enviar mensaje</span></div>
+  </div>
+  <div class="var"><div class="vnum">Variación 2</div>
+    <div class="field"><span class="fl">Texto primario</span><p>Sofás, comedores y camas hechos para TU espacio. Desliza el carrusel y descubre por qué "a la medida" es la mejor decisión para tu hogar. Escríbenos y diseña el tuyo.</p></div>
+    <div class="field"><span class="fl">Titular</span><p class="tit">Diseña según tu estilo</p></div>
+    <div class="field"><span class="fl">Descripción</span><p>De una foto a tu mueble</p></div>
+    <div class="field"><span class="fl">CTA</span><span class="cta">Más información</span></div>
+  </div>
+</div>
+
+<!-- CARRUSEL · SOFÁS -->
+<div class="creative wide" data-prod="sofas">
+  <div class="chead"><h3>Carrusel · Sillones / Sofás</h3><span class="tag t-sofas">Sofás / Salas</span></div>
+  <div class="cdesc">3 tarjetas del sofá desde varios ángulos y detalles.</div>
+  <div class="carstrip"><img src="img/car-sofa.jpg" alt="Carrusel sofás"></div>
+  <div class="var"><div class="vnum">Variación 1</div>
+    <div class="field"><span class="fl">Texto primario</span><p>Tu sala merece un sofá que combine con ella. Míralo desde todos los ángulos y elige tela, color y medida. Lo fabricamos a tu gusto, aquí en Panamá.</p></div>
+    <div class="field"><span class="fl">Titular</span><p class="tit">El sofá perfecto para tu sala</p></div>
+    <div class="field"><span class="fl">Descripción</span><p>A la medida · varios colores</p></div>
+    <div class="field"><span class="fl">CTA</span><span class="cta">Enviar mensaje</span></div>
+  </div>
+  <div class="var"><div class="vnum">Variación 2</div>
+    <div class="field"><span class="fl">Texto primario</span><p>Comodidad y estilo hechos a tu medida. Desliza para ver los detalles de nuestros sillones y cotiza el tuyo hoy. Contado o a plazos.</p></div>
+    <div class="field"><span class="fl">Titular</span><p class="tit">Sillones a tu medida</p></div>
+    <div class="field"><span class="fl">Descripción</span><p>Contado o a plazos</p></div>
+    <div class="field"><span class="fl">CTA</span><span class="cta">Más información</span></div>
+  </div>
+</div>
+
+<!-- CARRUSEL · COMEDORES -->
+<div class="creative wide" data-prod="comedores">
+  <div class="chead"><h3>Carrusel · Comedores</h3><span class="tag t-comedores">Comedores</span></div>
+  <div class="cdesc">3 tarjetas: comedores diseñados para tu hogar, distintos estilos.</div>
+  <div class="carstrip"><img src="img/car-comedor.jpg" alt="Carrusel comedores"></div>
+  <div class="var"><div class="vnum">Variación 1</div>
+    <div class="field"><span class="fl">Texto primario</span><p>Comedores diseñados para tu hogar. Mesa, sillas y acabado a tu gusto, para el espacio que tienes. Desliza y elige tu estilo. Visítanos o escríbenos.</p></div>
+    <div class="field"><span class="fl">Titular</span><p class="tit">Comedores diseñados para tu hogar</p></div>
+    <div class="field"><span class="fl">Descripción</span><p>Escoge a tu estilo</p></div>
+    <div class="field"><span class="fl">CTA</span><span class="cta">Cómo llegar</span></div>
+  </div>
+  <div class="var"><div class="vnum">Variación 2</div>
+    <div class="field"><span class="fl">Texto primario</span><p>La mesa donde va a pasar todo, hecha a la medida de tu familia. Redonda, rectangular, para 4 o para 8 — tú eliges. Cotiza tu comedor sin compromiso.</p></div>
+    <div class="field"><span class="fl">Titular</span><p class="tit">Tu comedor, a la medida</p></div>
+    <div class="field"><span class="fl">Descripción</span><p>Redondo, rectangular, para 4–8</p></div>
+    <div class="field"><span class="fl">CTA</span><span class="cta">Enviar mensaje</span></div>
+  </div>
+</div>
+
+<h2 class="sec"><span class="n">04</span> Videos</h2>
+<p style="margin:-.4rem 0 1rem 22px;color:var(--muted);font-size:.85rem">Póster de referencia (el video va aparte, en el material). Mismo esquema de campos de Meta.</p>
+
+<!-- VIDEO · SHOWROOM -->
+<div class="creative" data-prod="all">
+  <div class="cgrid">
+    <div class="cimg"><img src="img/vid-showroom.jpg" alt="Video showroom"><span class="playbadge"><svg viewBox="0 0 24 24"><path d="M7 5v14l12-7z"/></svg></span><span class="imgtag">Video · Showroom</span></div>
+    <div>
+      <div class="chead"><h3>Video · Showroom / "Ya abrimos"</h3><span class="tag t-all">Video · Todos</span></div>
+      <div class="cdesc">Tour del showroom / inauguración. Empuja la visita y el contado.</div>
+      <div class="var"><div class="vnum">Variación 1</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Ya abrimos las puertas de Mueblería Compra con Fefa. Ven a conocer nuestro showroom: sofás, camas y comedores listos para llevar, y también hechos a tu medida. Te esperamos.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Visita nuestro showroom</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Sofás, camas y comedores</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Cómo llegar</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 2</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Un showroom lleno de ideas para tu hogar. Mira todo lo que tenemos y llévate lo que te enamore hoy mismo — con entrega y armado incluido.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Todo para tu hogar, en un solo lugar</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Llévatelo hoy</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Más información</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VIDEO · PRODUCTO -->
+<div class="creative" data-prod="all">
+  <div class="cgrid">
+    <div class="cimg"><img src="img/vid-producto.jpg" alt="Video producto"><span class="playbadge"><svg viewBox="0 0 24 24"><path d="M7 5v14l12-7z"/></svg></span><span class="imgtag">Video · Producto</span></div>
+    <div>
+      <div class="chead"><h3>Video · Showcase de producto</h3><span class="tag t-all">Video · Todos</span></div>
+      <div class="cdesc">Muestra el mueble terminado y su calidad. Sirve para sofás, camas o comedores.</div>
+      <div class="var"><div class="vnum">Variación 1</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Así se ve un mueble hecho con calidad Fefa. Sofás, camas y comedores a la medida, para tu casa y tu forma de vivir. Dale play y cotiza el tuyo.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Muebles que se ven (y duran) mejor</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>A la medida · Panamá</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Enviar mensaje</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 2</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Mira la calidad de cerca. Cada mueble Fefa se fabrica a tu medida, con los acabados que enamoran. ¿Tu casa es la próxima? Escríbenos.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Dale play y mira la calidad</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Contado o a plazos</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Más información</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VIDEO · A LA MEDIDA -->
+<div class="creative" data-prod="all">
+  <div class="cgrid">
+    <div class="cimg"><img src="img/vid-medida.jpg" alt="Video a la medida"><span class="playbadge"><svg viewBox="0 0 24 24"><path d="M7 5v14l12-7z"/></svg></span><span class="imgtag">Video · A la medida</span></div>
+    <div>
+      <div class="chead"><h3>Video · Personalización "a la medida"</h3><span class="tag t-all">Video · Todos</span></div>
+      <div class="cdesc">Explica que se puede personalizar (tela, color, medida). El mejor gancho de conversión.</div>
+      <div class="var"><div class="vnum">Variación 1</div>
+        <div class="field"><span class="fl">Texto primario</span><p>¿Sabías que puedes personalizar tus sillones y camas? Elige tela, color y medida — nosotros lo fabricamos a tu gusto. Mira cómo y diseña el tuyo.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Personaliza tus muebles</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Tela, color y medida a elección</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Enviar mensaje</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 2</div>
+        <div class="field"><span class="fl">Texto primario</span><p>De una foto a tu mueble. Te mostramos cómo hacemos realidad el mueble que imaginaste, a tu medida. Cuéntanos qué buscas y te cotizamos.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">El mueble que imaginaste</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Hecho a tu medida</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Más información</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VIDEO · ENVÍOS -->
+<div class="creative" data-prod="all">
+  <div class="cgrid">
+    <div class="cimg"><img src="img/vid-envios.jpg" alt="Video envíos"><span class="playbadge"><svg viewBox="0 0 24 24"><path d="M7 5v14l12-7z"/></svg></span><span class="imgtag">Video · Entrega</span></div>
+    <div>
+      <div class="chead"><h3>Video · "¿Hacen envíos?" (entrega + armado)</h3><span class="tag t-all">Video · Todos</span></div>
+      <div class="cdesc">Responde la duda #1 y vende la tranquilidad del servicio completo.</div>
+      <div class="var"><div class="vnum">Variación 1</div>
+        <div class="field"><span class="fl">Texto primario</span><p>¿Hacen envíos? ¡Sí! Te entregamos tu mueble a domicilio en Ciudad de Panamá y La Chorrera, y te lo dejamos armado y listo para usar. Escríbenos y coordina.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Entrega a domicilio + armado incluido</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Cd. de Panamá y La Chorrera</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Enviar mensaje</span></div>
+      </div>
+      <div class="var"><div class="vnum">Variación 2</div>
+        <div class="field"><span class="fl">Texto primario</span><p>Tú lo eliges, nosotros lo llevamos y lo armamos. Sin cargar cajas ni pelear con instrucciones. Así de fácil es amueblar con Fefa. Cotiza tu mueble.</p></div>
+        <div class="field"><span class="fl">Titular</span><p class="tit">Sin estrés: lo llevamos y lo armamos</p></div>
+        <div class="field"><span class="fl">Descripción</span><p>Servicio completo</p></div>
+        <div class="field"><span class="fl">CTA</span><span class="cta">Más información</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 class="sec"><span class="n">05</span> Notas para pauta</h2>
 <div class="note">
   <p style="margin:.2rem 0"><b>Público:</b> familias y parejas 28–55 en <b>Ciudad de Panamá y La Chorrera</b> (zona de entrega). Intereses: decoración, diseño de interiores, mobiliario, mejoras del hogar, casa nueva, recién casados, recién mudados, bienes raíces.</p>
   <p style="margin:.5rem 0 0"><b>Prioridad de mensaje:</b> 1) contado + personalización, 2) facilidades de pago (apoyo/retargeting), 3) entrega + armado.</p>
